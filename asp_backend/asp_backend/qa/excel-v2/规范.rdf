@@ -1,0 +1,2450 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/"
+     xml:base="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:seukse-dys="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/yangy/ontologies/2023/11/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#制造商 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#制造商">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#制造商"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/组织"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#制造商"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#部署地区 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#部署地区">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地点"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#配备 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#配备">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#配备"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#配备"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/主体 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/主体">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/使用 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/使用">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/人物"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/组织"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/使用"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/发生地点 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/发生地点">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/发生地点"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地点"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/回应 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/回应">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/因果 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/因果">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/处置 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/处置">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/客体 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/客体">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/属于 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/属于">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/人物"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/属于"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/组织"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/涉及装备 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/涉及装备">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/表态 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/表态">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/顺承 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/顺承">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#乘员数 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#乘员数">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#装备属性"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#事件属性 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#事件属性">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#别名 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#别名">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#装备属性"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#发动机功率 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#发动机功率">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#装备属性"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#发生时间 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#发生时间">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#事件属性"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#受伤人数 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#受伤人数">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#事件属性"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#排水量 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#排水量">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#装备属性"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#最大航程 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#最大航程">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#装备属性"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#最大速度 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#最大速度">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#装备属性"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#死亡人数 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#死亡人数">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#事件属性"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#装备属性 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#装备属性">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#长度 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#长度">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#装备属性"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地理坐标 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地理坐标">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/开始时间 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/开始时间">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#事件属性"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/报道时间 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/报道时间">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#事件属性"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/持续时间 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/持续时间">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#事件属性"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/描述 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/描述">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#事件属性"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/纬度 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/纬度">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地理坐标"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/经度 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/经度">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地理坐标"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/结束时间 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/结束时间">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#事件属性"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#企业 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#企业">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/组织"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#使者 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#使者">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/人物"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#战俘 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#战俘">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/人物"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#布/扫雷车 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#布/扫雷车">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种车辆"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/两栖作战舰艇 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/两栖作战舰艇">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰船"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/两栖战车 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/两栖战车">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种车辆"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/中子弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/中子弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/炸弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/主战坦克 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/主战坦克">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/坦克"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/主体"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/人物"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/主体"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/组织"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/主体"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/发生地点"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地点"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/回应"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/因果"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/处置"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/客体"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/人物"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/客体"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地点"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/客体"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/组织"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/客体"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/涉及装备"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/表态"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/顺承"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/交通枢纽 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/交通枢纽">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地点"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/人员伤亡 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/人员伤亡">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/人物 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/人物">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/使用"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/属于"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/组织"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/侦察战车 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/侦察战车">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种车辆"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/侦察机 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/侦察机">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/侦查 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/侦查">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/保障辅助舰艇 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/保障辅助舰艇">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰船"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/停火 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/停火">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/入侵领海 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/入侵领海">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/军事冲突"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/关键设施 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/关键设施">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地点"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/军事冲突 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/军事冲突">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/军事基地 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/军事基地">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地点"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/军事封锁 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/军事封锁">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/军事冲突"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/军事援助 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/军事援助">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/军事演练 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/军事演练">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/冲锋枪 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/冲锋枪">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/枪支"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/刀具 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/刀具">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/加农榴弹炮 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/加农榴弹炮">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火炮"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/加农炮 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/加农炮">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火炮"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/加油机 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/加油机">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/原子弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/原子弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/炸弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/反坦克导弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/反坦克导弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/导弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/反坦克炮 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/反坦克炮">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火炮"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/反弹道导弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/反弹道导弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/导弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/反潜机 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/反潜机">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地点"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/组织"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家、地区或国际军事化组织 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家、地区或国际军事化组织">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/组织"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地区政府间组织 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地区政府间组织">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/组织"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地地导弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地地导弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/导弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地点 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地点">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/属于"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地空导弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地空导弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/导弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地雷 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地雷">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/炸弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/坦克 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/坦克">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/坦克炮 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/坦克炮">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火炮"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/城市 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/城市">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地点"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/多用途直升机 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/多用途直升机">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/宇宙飞船 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/宇宙飞船">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航天装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/导弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/导弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/导弹艇 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/导弹艇">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰船"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/居住区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/居住区">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地点"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/履带式战车 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/履带式战车">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种车辆"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/岛礁 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/岛礁">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地点"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/岸舰导弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/岸舰导弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/导弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/巡洋舰 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/巡洋舰">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰船"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/巡逻舰 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/巡逻舰">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰船"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/工程抢修车 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/工程抢修车">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种车辆"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/常规潜艇 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/常规潜艇">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰船"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/干线 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/干线">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/平民 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/平民">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/人物"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/应用卫星 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/应用卫星">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航天装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/弹炮结合系统 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/弹炮结合系统">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火炮"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/战列舰 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/战列舰">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰船"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/战区 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/战区">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地点"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/战斗机 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/战斗机">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/手枪 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/手枪">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/枪支"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/手榴弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/手榴弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/炸弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/技术试验卫星 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/技术试验卫星">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航天装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/护卫舰 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/护卫舰">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰船"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/支线 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/支线">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/攻击机 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/攻击机">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/救护车 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/救护车">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种车辆"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/教练机 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/教练机">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/无人机 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/无人机">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/无后坐炮 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/无后坐炮">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火炮"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/无政府组织 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/无政府组织">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/组织"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/未知的国家参与者 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/未知的国家参与者">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/组织"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/未知的国际参与者 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/未知的国际参与者">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/组织"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/机枪 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/机枪">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/枪支"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/枪支 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/枪支">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/核潜艇 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/核潜艇">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰船"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/榴弹发射器 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/榴弹发射器">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/枪支"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/榴弹炮 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/榴弹炮">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火炮"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/步兵战车 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/步兵战车">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种车辆"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/武装人员 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/武装人员">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/人物"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/武装直升机 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/武装直升机">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/毁伤 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/毁伤">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/气垫船 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/气垫船">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰船"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/氢弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/氢弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/炸弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/水雷 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/水雷">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/炸弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/水雷战舰艇 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/水雷战舰艇">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰船"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/洲际弹道导弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/洲际弹道导弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/导弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/海域 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/海域">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地点"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/潜舰导弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/潜舰导弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/导弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火炮 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火炮">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火箭弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火箭弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/炸弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火箭炮 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火箭炮">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火炮"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火箭筒 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火箭筒">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/枪支"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/炸弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/炸弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/热点区域 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/热点区域">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地点"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种坦克 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种坦克">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/坦克"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种车辆 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种车辆">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/狙击枪 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/狙击枪">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/枪支"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/电子战机 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/电子战机">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/科学卫星 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/科学卫星">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航天装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/空地导弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/空地导弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/导弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/空空导弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/空空导弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/导弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/空舰导弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/空舰导弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/导弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/空袭 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/空袭">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/袭击"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/空间站 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/空间站">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航天装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/空降战车 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/空降战车">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种车辆"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/组织 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/组织">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/使用"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/自动步枪 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/自动步枪">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/枪支"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/自由航行 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/自由航行">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/自行火炮 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/自行火炮">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火炮"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航天基地 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航天基地">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航天装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航天机构 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航天机构">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航天装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航天装备 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航天装备">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航天飞机 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航天飞机">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航天装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航空母舰 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航空母舰">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰船"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航空炮 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航空炮">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火炮"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰地（潜地）导弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰地（潜地）导弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/导弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰炮 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰炮">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火炮"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰空导弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰空导弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/导弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰舰导弹 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰舰导弹">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/导弹"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰船 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰船">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/表态 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/表态">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/袭击 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/袭击">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/军事冲突"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#制造商"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#企业"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/属于"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/组织"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备试验 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备试验">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装甲侦察车 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装甲侦察车">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种车辆"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装甲指挥车 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装甲指挥车">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种车辆"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装甲车载炮 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装甲车载炮">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火炮"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装甲运兵车 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装甲运兵车">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种车辆"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/记者 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/记者">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/人物"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/试验机 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/试验机">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/越野车 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/越野车">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种车辆"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/跟踪监视 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/跟踪监视">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/轮式战车 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/轮式战车">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种车辆"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/轰炸机 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/轰炸机">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/运河 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/运河">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地点"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/运载火箭 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/运载火箭">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/航天装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/运输机 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/运输机">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/运输直升机 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/运输直升机">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/运输车辆 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/运输车辆">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种车辆"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/迫击炮 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/迫击炮">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火炮"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/通用飞机 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/通用飞机">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/道路 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/道路">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/地点"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/部署 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/部署">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/释放人质 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/释放人质">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/重要人物 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/重要人物">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/人物"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/防空反导 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/防空反导">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/防空系统 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/防空系统">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/附件 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/附件">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/枪支"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/难民 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/难民">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/人物"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/霰弹枪 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/霰弹枪">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/枪支"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/非自动步枪 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/非自动步枪">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/枪支"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/预警机 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/预警机">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞艇 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞艇">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/飞行器">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装备"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/驱离 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/驱离">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/事件"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/驱逐舰 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/驱逐舰">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰船"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/高射炮 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/高射炮">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/火炮"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/鱼雷 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/鱼雷">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/炸弹"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#F-35隐形战斗机 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#F-35隐形战斗机">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/战斗机"/>
+        <属于 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/美国军方"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#以军在约旦河西岸逮捕多名巴勒斯坦人 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#以军在约旦河西岸逮捕多名巴勒斯坦人">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/军事冲突"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#以色列军队"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#巴勒斯坦人"/>
+        <发生地点 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#伯利恒"/>
+        <发生地点 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#希伯伦"/>
+        <发生地点 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#杰里科"/>
+        <发生地点 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#盖勒吉利"/>
+        <发生地点 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#约旦河西岸拉姆安拉"/>
+        <发生地点 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#纳布卢斯"/>
+        <开始时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-07T00:00:00</开始时间>
+        <报道时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-08T00:00:00</报道时间>
+        <描述>2023年11月,以色列军队7日夜间进入约旦河西岸拉姆安拉、纳布卢斯、希伯伦、杰里科、伯利恒、盖勒吉利耶等地开展搜捕行动，并与当地巴勒斯坦人发生冲突。</描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#以军称袭击哈马斯在汗尤尼斯的情报总部_巴勒斯坦武装组织称继续袭击以军 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#以军称袭击哈马斯在汗尤尼斯的情报总部_巴勒斯坦武装组织称继续袭击以军">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/袭击"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#哈马斯"/>
+        <因果 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/以色列国防军在加沙北部的行动中发现多个地道入口"/>
+        <表态 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#以军在约旦河西岸逮捕多名巴勒斯坦人"/>
+        <开始时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-12-30 00:00:00</开始时间>
+        <报道时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-12-31 00:00:00</报道时间>
+        <结束时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023年12月30日 00:00:00</结束时间>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#以色列 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#以色列">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#以色列军队 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#以色列军队">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家、地区或国际军事化组织"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#伯利恒 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#伯利恒">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/居住区"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#何塞黎刹级护卫舰 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#何塞黎刹级护卫舰">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/舰船"/>
+        <属于 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#菲律宾"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#俄称在布良斯克州上空拦截多架乌方无人机 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#俄称在布良斯克州上空拦截多架乌方无人机">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/防空反导"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#俄防空部队"/>
+        <发生地点 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#布良斯克州"/>
+        <客体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#无人机"/>
+        <涉及装备 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#无人机"/>
+        <开始时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-12-29T18:00:00</开始时间>
+        <报道时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-12-30T00:00:00</报道时间>
+        <描述>2023年,俄罗斯国防部当地时间12月29日称，当天18时左右，俄防空部队在布良斯克州上空拦截了乌军1架无人机，消除了乌克兰使用攻击型无人机对俄境内设施发动袭击的行动计划</描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#俄罗斯 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#俄罗斯">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#俄防空部队 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#俄防空部队">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家、地区或国际军事化组织"/>
+        <属于 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#俄罗斯"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#哈马斯 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#哈马斯">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家、地区或国际军事化组织"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#哈马斯下属武装派别：准备释放70名被扣押人员以换取5天的停火期 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#哈马斯下属武装派别：准备释放70名被扣押人员以换取5天的停火期">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/释放人质"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#哈马斯下属武装（别卡桑）"/>
+        <发生地点 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#巴勒斯坦"/>
+        <客体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#70名妇女和儿童"/>
+        <开始时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-13T00:00:00</开始时间>
+        <报道时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-14T00:00:00</报道时间>
+        <结束时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-13T00:00:00</结束时间>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#哈马斯下属武装（别卡桑） -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#哈马斯下属武装（别卡桑）">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家、地区或国际军事化组织"/>
+        <属于 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#哈马斯"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#大西洋 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#大西洋">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/海域"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#巴勒斯坦 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#巴勒斯坦">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#巴勒斯坦人 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#巴勒斯坦人">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/平民"/>
+        <属于 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#巴勒斯坦"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#布良斯克州 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#布良斯克州">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/居住区"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#希伯伦 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#希伯伦">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/居住区"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#无人机 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#无人机">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/无人机"/>
+        <属于 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/乌克兰"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#杰里科 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#杰里科">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/居住区"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#歼-20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#歼-20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/战斗机"/>
+        <属于 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/中国"/>
+        <seukse-dys:别名>J-20</seukse-dys:别名>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#洛克希德马丁公司 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#洛克希德马丁公司">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#企业"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#澳大利亚 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#澳大利亚">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#盖勒吉利 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#盖勒吉利">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/居住区"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#约旦河西岸拉姆安拉 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#约旦河西岸拉姆安拉">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/居住区"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#纳布卢斯 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#纳布卢斯">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/居住区"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#莱茵金属公司 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#莱茵金属公司">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#企业"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#菲律宾 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#菲律宾">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#豹1A5坦克 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#豹1A5坦克">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/坦克"/>
+        <seukse-dys:制造商 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#莱茵金属公司"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#运-9侦察机 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#运-9侦察机">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/侦察机"/>
+        <属于 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/中国"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#驻日美军冲绳嘉手纳空军基地 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#驻日美军冲绳嘉手纳空军基地">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/军事基地"/>
+        <属于 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/美国军方"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#黄岩岛临近海域 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#黄岩岛临近海域">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/海域"/>
+        <属于 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/南海地区"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#054A护卫舰 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#054A护卫舰">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/护卫舰"/>
+        <属于 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/中国"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#12月9日菲方何塞·黎刹级护卫舰非法侵闯中国黄岩岛邻近海域，中国海警依法对其实施管控措施。 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#12月9日菲方何塞·黎刹级护卫舰非法侵闯中国黄岩岛邻近海域，中国海警依法对其实施管控措施。">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/驱离"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/中国"/>
+        <发生地点 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#黄岩岛临近海域"/>
+        <处置 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#12月9日，菲方何塞·黎刹级护卫舰非法侵闯中国黄岩岛邻近海域。"/>
+        <客体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#何塞黎刹级护卫舰"/>
+        <开始时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-12-09T00:00:00</开始时间>
+        <报道时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-12-11T00:00:00</报道时间>
+        <描述 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">12月9日，菲方何塞·黎刹级护卫舰非法侵闯中国黄岩岛邻近海域，中国海警依法对其实施管控措施。</描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#12月9日，菲方何塞·黎刹级护卫舰非法侵闯中国黄岩岛邻近海域。 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#12月9日，菲方何塞·黎刹级护卫舰非法侵闯中国黄岩岛邻近海域。">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/入侵领海"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#何塞黎刹级护卫舰"/>
+        <发生地点 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#黄岩岛临近海域"/>
+        <客体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#黄岩岛临近海域"/>
+        <涉及装备 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#何塞黎刹级护卫舰"/>
+        <开始时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-12-09T00:00:00</开始时间>
+        <报道时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-12-11T00:00:00</报道时间>
+        <描述 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">12月9日，菲方派何塞·黎刹级护卫舰非法侵闯中国黄岩岛邻近海域，中国海警依法对其实施管控措施。</描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#2023年11月26日菲澳两国部队进行了联合海空巡逻。 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#2023年11月26日菲澳两国部队进行了联合海空巡逻。">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/自由航行"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#澳大利亚"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#菲律宾"/>
+        <发生地点 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/南海地区"/>
+        <顺承 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#2023年11月美菲两国部队进行了联合海空巡航。"/>
+        <开始时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-26T00:00:00</开始时间>
+        <报道时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-28T00:00:00</报道时间>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#2023年11月美菲两国部队进行了联合海空巡航。 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#2023年11月美菲两国部队进行了联合海空巡航。">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/自由航行"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#菲律宾"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/美国"/>
+        <发生地点 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/南海地区"/>
+        <报道时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-28T00:00:00</报道时间>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#2023年以色列封锁加沙地带 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#2023年以色列封锁加沙地带">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/军事封锁"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#以色列"/>
+        <发生地点 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/加沙地带"/>
+        <客体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/加沙地带"/>
+        <开始时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-09T00:00:00</开始时间>
+        <描述>2023年10月9日，以色列宣布“全面封锁”加沙地带，[1]切断食品、水、药品、燃料和电力供应[2]以报复哈马斯两天前的突袭</描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#70名妇女和儿童 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#70名妇女和儿童">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/平民"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#美军向冲绳大举增派F-35隐形战斗机，宣称“加强威慑措施” -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#美军向冲绳大举增派F-35隐形战斗机，宣称“加强威慑措施”">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/部署"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/美国军方"/>
+        <发生地点 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#驻日美军冲绳嘉手纳空军基地"/>
+        <客体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#F-35隐形战斗机"/>
+        <涉及装备 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#F-35隐形战斗机"/>
+        <开始时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-23T00:00:00</开始时间>
+        <描述>2023年11月23日,除了派遣各型战斗机轮流进驻嘉手纳基地、熟悉西太平洋地区的作战环境外，美国空军还考虑将最新型F-15EX重型战斗机部署到这里，以确保美国在冲绳的空中力量相比解放军不落下风</描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#美菲联合巡航时，菲律宾也声称，解放军一艘054A护卫舰和一架运—9侦察机在附近跟踪监视。 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#美菲联合巡航时，菲律宾也声称，解放军一艘054A护卫舰和一架运—9侦察机在附近跟踪监视。">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/跟踪监视"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/中国"/>
+        <客体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#澳大利亚"/>
+        <客体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#菲律宾"/>
+        <涉及装备 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#运-9侦察机"/>
+        <涉及装备 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#054A护卫舰"/>
+        <报道时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-28T00:00:00</报道时间>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#菲澳两国部队26日进行了联合海空巡逻。当天，菲律宾表示监测到两架中国战斗机“绕飞”一架正在执行联合巡逻任务的菲律宾军机 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#菲澳两国部队26日进行了联合海空巡逻。当天，菲律宾表示监测到两架中国战斗机“绕飞”一架正在执行联合巡逻任务的菲律宾军机">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/跟踪监视"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#歼-20"/>
+        <处置 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#2023年11月26日菲澳两国部队进行了联合海空巡逻。"/>
+        <客体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#澳大利亚"/>
+        <客体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#菲律宾"/>
+        <涉及装备 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#歼-20"/>
+        <报道时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-12-28T00:00:00</报道时间>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/P-8反潜巡逻机 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/P-8反潜巡逻机">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/反潜机"/>
+        <seukse-dys:制造商 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#洛克希德马丁公司"/>
+        <属于 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/美国"/>
+        <seukse-dys:别名>海神</seukse-dys:别名>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/中国 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/中国">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/乌克兰 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/乌克兰">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家"/>
+        <使用 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#无人机"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/以色列国防军在加沙北部的行动中发现多个地道入口 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/以色列国防军在加沙北部的行动中发现多个地道入口">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/侦查"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#以色列军队"/>
+        <发生地点 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/加沙地带"/>
+        <报道时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-5</报道时间>
+        <描述 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2023年11月,以色列国防部当地时间5日发布消息称，巴勒斯坦伊斯兰抵抗运动（哈马斯）武装藏身在错综复杂的地道中，以色列国防军在加沙北部的行动中发现多个地道入口</描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/伊拉克和叙利亚境内驻有美军的军事基地遭火箭弹袭击 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/伊拉克和叙利亚境内驻有美军的军事基地遭火箭弹袭击">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/袭击"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/伊斯兰抵抗组织"/>
+        <客体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/美国军方"/>
+        <开始时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-12-11 00:00:00</开始时间>
+        <结束时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-12-11</结束时间>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/伊斯兰抵抗组织 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/伊斯兰抵抗组织">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家、地区或国际军事化组织"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/加拿大军队 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/加拿大军队">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家、地区或国际军事化组织"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/加沙地带 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/加沙地带">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/热点区域"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/南海地区 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/南海地区">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/海域"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/热点区域"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/德国 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/德国">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/德国联邦政府支持乌克兰32辆豹式坦克 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/德国联邦政府支持乌克兰32辆豹式坦克">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/军事援助"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/德国"/>
+        <发生地点 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/德国"/>
+        <客体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/乌克兰"/>
+        <涉及装备 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys#豹1A5坦克"/>
+        <涉及装备 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装甲救援车"/>
+        <涉及装备 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/训练坦克"/>
+        <报道时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-15</报道时间>
+        <描述 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">德国军工企业莱茵金属公司14日宣布，已收到德国联邦政府用于支持乌克兰的32辆豹式坦克订单，将于明年交付。</描述>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/日本 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/日本">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/日本在本土和周边地区接连举行多场军演和训练 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/日本在本土和周边地区接连举行多场军演和训练">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/军事演练"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/加拿大军队"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/日本自卫队"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/澳大利亚军队"/>
+        <主体 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/美国军方"/>
+        <涉及装备 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/P-8反潜巡逻机"/>
+        <开始时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-10</开始时间>
+        <报道时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-14</报道时间>
+        <持续时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11</持续时间>
+        <描述 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">日本近期在本土和周边地区接连举行多场军演和训练，日美等西方媒体报道中均提到有应对中国之意。其中，日本与美国、澳大利亚和加拿大在日本海岸线附近举行年度联合军演，更是首次邀请菲律宾海军以观察员身份参与和观摩。</描述>
+        <结束时间 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-20</结束时间>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/日本自卫队 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/日本自卫队">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家、地区或国际军事化组织"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/澳大利亚军队 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/澳大利亚军队">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家、地区或国际军事化组织"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/美国 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/美国">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/美国军方 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/美国军方">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/国家、地区或国际军事化组织"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装甲救援车 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/装甲救援车">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/特种车辆"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/训练坦克 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/训练坦克">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/坦克"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/钱斯洛斯维尔号巡洋舰 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/钱斯洛斯维尔号巡洋舰">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/巡洋舰"/>
+        <seukse-dys:配备 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/P-8反潜巡逻机"/>
+        <属于 rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/美国"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/黄岩岛 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/黄岩岛">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yangy/ontologies/2023/11/seukse-dys/岛礁"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

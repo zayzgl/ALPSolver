@@ -1,0 +1,13 @@
+fly :- bird:fly.
+wing :- fly.
+bird.
+-wing.
+
+
+
+
+
+
+
+
+
