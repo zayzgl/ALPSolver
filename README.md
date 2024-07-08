@@ -345,9 +345,9 @@ The below table illustrates the impact of different optimization combinations on
 |   Athlete Problem(n=1)   |  0.010  |    0.011    |  0.009   | 0.009  |
 |   Athlete Problem(n=2)   |  0.024  |    0.022    |  0.017   | 0.013  |
 |   Athlete Problem(n=3)   |  0.153  |    0.131    |  0.043   | 0.039  |
-|   Athlete Problem(n=4)   |  1.244  |    0.761    |          | 0.108  |
-|   Athlete Problem(n=5)   | 10.953  |    5.203    |          | 0.434  |
-|   Athlete Problem(n=6)   | 99.573  |   22.088    |          | 1.805  |
+|   Athlete Problem(n=4)   |  1.244  |    0.761    |  0.135   | 0.108  |
+|   Athlete Problem(n=5)   | 10.953  |    5.203    |  0.473   | 0.434  |
+|   Athlete Problem(n=6)   | 99.573  |   22.088    |  1.956   | 1.805  |
 |   Athlete Problem(n=7)   | 905.978 |   127.549   |  8.705   | 7.364  |
 
 In terms of algorithm efficiency, OASBVS has the highest speedup ratio that increases significantly with the scale of ALP program. In addition, the enumeration pruning enhances the algorithm more effectively than preprocessing; however, their combination yields the optimal result.
